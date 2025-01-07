@@ -1,0 +1,28 @@
+//281A - Word Capitalization
+#include <stdio.h>
+#include <ctype.h>
+
+int main()
+{
+    char a[1000];
+
+    scanf("%s", a);
+
+    if (a[0] >= 97 || a[0] <= 122)
+    {
+        char u = toupper(a[0]);
+        int i = 1;
+        printf("%c", u);
+        while (a[i] != '\0')
+        {
+            printf("%c", a[i]);
+            i++;
+        }
+    }
+    else
+    {
+        printf("%s", a);
+    }
+
+    return 0;
+}
