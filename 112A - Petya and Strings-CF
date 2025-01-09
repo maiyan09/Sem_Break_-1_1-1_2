@@ -17,6 +17,7 @@ int main()
         char u = tolower(a[i]);
         char u1 = tolower(b[i]);
 
+        /* Compearing each letter of the word that which letter comes first*/
         if (u < u1)
         {
             printf("-1");
