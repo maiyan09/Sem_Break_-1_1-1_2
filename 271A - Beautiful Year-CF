@@ -1,0 +1,35 @@
+//271A - Beautiful Year
+#include <stdio.h>
+
+int distinct_year(int year)
+{
+    int year_check[10] = {0}; // {0,0,0,0,0,0,0,0,0,0}
+    
+    while (year > 0)
+    {
+        int rem = year % 10;
+        if (year_check[rem] == 1)
+        {
+            return 0;
+        }
+        year_check[rem] = 1;
+        year /= 10;
+        
+    }
+    return 1;
+}
+
+int main() {
+    int y;
+    scanf("%d", &y);
+    y++;
+    
+    while (distinct_year(y) != 1)
+    {
+        y++;
+    }
+    printf("%d", y);
+    
+    
+    return 0;
+}
