@@ -1,0 +1,37 @@
+//785A - Anton and Polyhedrons
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cin >> n;
+
+    char p[15];
+    int sum = 0;
+    while (n--)
+    {
+        cin >> p;
+        if (p[0] == 'T')
+        {
+            sum = sum + 4;
+        }
+        else if (p[0] == 'C')
+        {
+            sum = sum + 6;
+        }
+        else if (p[0] == 'O')
+        {
+            sum = sum + 8;
+        }else if (p[0] == 'D')
+        {
+            sum = sum + 12;
+        }else if (p[0] == 'I')
+        {
+            sum = sum + 20;
+        }
+    }
+    cout << sum;
+
+    return 0;
+}
