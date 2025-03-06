@@ -1,0 +1,26 @@
+//677A - Vanya and Fence
+#include <stdio.h>
+
+int main()
+{
+    int n, h, count = 0;
+    scanf("%d %d", &n, &h);
+    
+    while (n--)
+    {
+        int a;
+        scanf("%d", &a);
+        
+        if (a <= h)
+        {
+            count++;
+        }
+        else
+        {
+            count = count + 2;
+        }
+    }
+    printf("%d\n", count);
+
+    return 0;
+}
