@@ -19,3 +19,8 @@ int main() {
         else cout << "YES" << endl;
     }
 }
+/*
+All characters must appear an even number of times, but at most one character can appear an odd number of times (it would sit in the middle).
+Odd count ≤ 1	✅ Can form palindrome ("madam" m=2, a=2, d=1 )
+Odd count > 1	❌ Cannot form palindrome ("hello" h=1, e=1, l=2, o=1)
+*/
